@@ -21,10 +21,10 @@
 		55C0B066185C7B3B006D3214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0B048185C7B3A006D3214 /* UIKit.framework */; };
 		55C0B06E185C7B3B006D3214 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55C0B06C185C7B3B006D3214 /* InfoPlist.strings */; };
 		55C0B070185C7B3B006D3214 /* GiftHuntersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0B06F185C7B3B006D3214 /* GiftHuntersTests.m */; };
-		55C0B07A185C7BCE006D3214 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0B079185C7BCE006D3214 /* FacebookSDK.framework */; };
-		55C0B07C185C7BDC006D3214 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0B07B185C7BDC006D3214 /* libEstimoteSDK.a */; };
 		55C0B07F185C859C006D3214 /* GiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0B07E185C859C006D3214 /* GiftView.m */; };
 		55C0B081185C85AC006D3214 /* GiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C0B080185C85AC006D3214 /* GiftView.xib */; };
+		A92041A2185C8C9E00EA1205 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A920419F185C8C8F00EA1205 /* FacebookSDK.framework */; };
+		A92041A3185C8CAC00EA1205 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +57,16 @@
 		55C0B06B185C7B3B006D3214 /* GiftHuntersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GiftHuntersTests-Info.plist"; sourceTree = "<group>"; };
 		55C0B06D185C7B3B006D3214 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55C0B06F185C7B3B006D3214 /* GiftHuntersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftHuntersTests.m; sourceTree = "<group>"; };
-		55C0B079185C7BCE006D3214 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		55C0B07B185C7BDC006D3214 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEstimoteSDK.a; path = EstimoteSDK/libEstimoteSDK.a; sourceTree = "<group>"; };
 		55C0B07D185C859C006D3214 /* GiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftView.h; sourceTree = "<group>"; };
 		55C0B07E185C859C006D3214 /* GiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftView.m; sourceTree = "<group>"; };
 		55C0B080185C85AC006D3214 /* GiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftView.xib; sourceTree = "<group>"; };
+		A9204199185C8C8F00EA1205 /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
+		A920419A185C8C8F00EA1205 /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		A920419B185C8C8F00EA1205 /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
+		A920419C185C8C8F00EA1205 /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
+		A920419D185C8C8F00EA1205 /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		A920419F185C8C8F00EA1205 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C0B07C185C7BDC006D3214 /* libEstimoteSDK.a in Frameworks */,
-				55C0B07A185C7BCE006D3214 /* FacebookSDK.framework in Frameworks */,
+				A92041A3185C8CAC00EA1205 /* libEstimoteSDK.a in Frameworks */,
+				A92041A2185C8C9E00EA1205 /* FacebookSDK.framework in Frameworks */,
 				55C0B047185C7B3A006D3214 /* CoreGraphics.framework in Frameworks */,
 				55C0B049185C7B3A006D3214 /* UIKit.framework in Frameworks */,
 				55C0B045185C7B3A006D3214 /* Foundation.framework in Frameworks */,
@@ -112,8 +117,8 @@
 		55C0B043185C7B3A006D3214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55C0B07B185C7BDC006D3214 /* libEstimoteSDK.a */,
-				55C0B079185C7BCE006D3214 /* FacebookSDK.framework */,
+				A9204197185C8C8F00EA1205 /* EstimoteSDK */,
+				A920419F185C8C8F00EA1205 /* FacebookSDK.framework */,
 				55C0B044185C7B3A006D3214 /* Foundation.framework */,
 				55C0B046185C7B3A006D3214 /* CoreGraphics.framework */,
 				55C0B048185C7B3A006D3214 /* UIKit.framework */,
@@ -166,6 +171,27 @@
 				55C0B06C185C7B3B006D3214 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9204197185C8C8F00EA1205 /* EstimoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A9204198185C8C8F00EA1205 /* Headers */,
+				A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */,
+			);
+			path = EstimoteSDK;
+			sourceTree = "<group>";
+		};
+		A9204198185C8C8F00EA1205 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A9204199185C8C8F00EA1205 /* ESTBeacon.h */,
+				A920419A185C8C8F00EA1205 /* ESTBeaconDefinitions.h */,
+				A920419B185C8C8F00EA1205 /* ESTBeaconManager.h */,
+				A920419C185C8C8F00EA1205 /* ESTBeaconRegion.h */,
+				A920419D185C8C8F00EA1205 /* ESTBeaconUpdateInfo.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +425,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lavoro/Documents/workspace/GiftHunters,
+					"/Users/antonio/Documents/workspace/gift-hunters",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GiftHunters/GiftHunters-Prefix.pch";
@@ -411,6 +438,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lavoro/Documents/workspace/GiftHunters/EstimoteSDK,
+					"/Users/antonio/Documents/workspace/gift-hunters/EstimoteSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -425,6 +453,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lavoro/Documents/workspace/GiftHunters,
+					"/Users/antonio/Documents/workspace/gift-hunters",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GiftHunters/GiftHunters-Prefix.pch";
@@ -437,6 +466,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lavoro/Documents/workspace/GiftHunters/EstimoteSDK,
+					"/Users/antonio/Documents/workspace/gift-hunters/EstimoteSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
