@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgRegalo;
 @property (nonatomic) BOOL fuoco;
 @property (weak, nonatomic) IBOutlet UILabel *acquaFuoco;
+
+@property (nonatomic, strong) NSMutableArray *beaconsToBeFound;
+
 - (IBAction)callGiftView:(id)sender;
 
 @end
