@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSString *textDescrRegalo;
+    NSString *textGifter;
+    NSString *urlImage;
+    bool valido;
+
+}
+
 @property (strong, nonatomic) IBOutlet UIButton *giftViewButton;
 @property (weak, nonatomic) IBOutlet UILabel *punteggioTotale;
 @property (weak, nonatomic) IBOutlet UILabel *ultimoRegaloTrovato;
@@ -21,5 +29,6 @@
 @property (nonatomic, strong) NSMutableArray *beaconsToBeFound;
 
 - (IBAction)callGiftView:(id)sender;
+
 
 @end

@@ -12,5 +12,17 @@
 @property (strong, nonatomic) IBOutlet UIButton *removeViewBtn;
 - (IBAction)removeViewAction:(id)sender;
 - (GiftView *)loadInstanceFromNib;
+@property (strong, nonatomic) IBOutlet UILabel *lblTrovato;
+@property (strong, nonatomic) IBOutlet UILabel *lblPunti;
+@property (strong, nonatomic) IBOutlet UILabel *lblDescrRegalo;
+@property (strong, nonatomic) IBOutlet UILabel *lblDonatore;
+@property (strong, nonatomic) IBOutlet UIImageView *imgRegalo;
+@property NSString *textDescrRegaloView;
+@property NSString *textDonatore;
+@property NSString *textPunto;
+@property (strong, nonatomic) IBOutlet UILabel *lblGiftFrom;
+@property NSString *urlImg;
+@property bool beaconValido;
+
 
 @end
