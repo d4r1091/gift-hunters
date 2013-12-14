@@ -85,8 +85,9 @@
 		A920419B185C8C8F00EA1205 /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
 		A920419C185C8C8F00EA1205 /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
 		A920419D185C8C8F00EA1205 /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
-		A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEstimoteSDK.a; path = EstimoteSDK/libEstimoteSDK.a; sourceTree = "<group>"; };
 		A920419F185C8C8F00EA1205 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		A9FF82F3185C9466008B47FA /* costants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = costants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +148,8 @@
 		55C0B043185C7B3A006D3214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9204198185C8C8F00EA1205 /* Headers */,
+				A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */,
 				1A809D65185C9DDC009814E3 /* SystemConfiguration.framework */,
 				1A809D63185C9DD5009814E3 /* StoreKit.framework */,
 				1A809D61185C9DD0009814E3 /* Security.framework */,
@@ -157,7 +160,6 @@
 				1A809D57185C9DA9009814E3 /* CFNetwork.framework */,
 				1A809D55185C9DA4009814E3 /* AudioToolbox.framework */,
 				1A809D53185C9D8B009814E3 /* Parse.framework */,
-				A9204197185C8C8F00EA1205 /* EstimoteSDK */,
 				A920419F185C8C8F00EA1205 /* FacebookSDK.framework */,
 				55C0B044185C7B3A006D3214 /* Foundation.framework */,
 				55C0B046185C7B3A006D3214 /* CoreGraphics.framework */,
@@ -191,6 +193,7 @@
 				55C0B04D185C7B3A006D3214 /* InfoPlist.strings */,
 				55C0B050185C7B3A006D3214 /* main.m */,
 				55C0B052185C7B3A006D3214 /* GiftHunters-Prefix.pch */,
+				A9FF82F3185C9466008B47FA /* costants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,15 +216,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A9204197185C8C8F00EA1205 /* EstimoteSDK */ = {
-			isa = PBXGroup;
-			children = (
-				A9204198185C8C8F00EA1205 /* Headers */,
-				A920419E185C8C8F00EA1205 /* libEstimoteSDK.a */,
-			);
-			path = EstimoteSDK;
-			sourceTree = "<group>";
-		};
 		A9204198185C8C8F00EA1205 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +225,8 @@
 				A920419C185C8C8F00EA1205 /* ESTBeaconRegion.h */,
 				A920419D185C8C8F00EA1205 /* ESTBeaconUpdateInfo.h */,
 			);
-			path = Headers;
+			name = Headers;
+			path = EstimoteSDK/Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
