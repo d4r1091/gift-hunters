@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{   int beaconRichiesto;
+    int beaconCercato;
+}
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end
