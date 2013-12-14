@@ -28,7 +28,4 @@
 
 @property (nonatomic, strong) NSMutableArray *beaconsToBeFound;
 
-- (IBAction)callGiftView:(id)sender;
-
-
 @end

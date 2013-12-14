@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GiftView.h"
+#import <Parse/Parse.h>
 #import "ESTBeaconManager.h"
 
 @interface ViewController () <ESTBeaconManagerDelegate>
@@ -64,6 +65,7 @@ GiftView *gift;
         if (foundXmasTreeAtFirst)
         {
             NSLog(@"TROVATO ALBERO LA PRIMA VOLTA");
+            [manager stopAdvertising];
             [manager stopEstimoteBeaconDiscovery];
             [manager stopMonitoringForRegion:region];
             [manager stopRangingBeaconsInRegion:region];
@@ -75,15 +77,13 @@ GiftView *gift;
         else if (isTheRightBeacon&&proximityImmediate)
         {
             [self removeFoundBeaconWithMinor:closestBeacon.minor];
+            [self callGiftViewForBeacon:closestBeacon.minor];
             NSLog(@"TROVATO BEACON: %@", [closestBeacon.minor stringValue]);
+            
         }
         else if (isTheRightBeacon&&proximityNear)
         {
-            _acquaFuoco.text = @"FUOCO";
-        }
-        else if (proximityFarOrUnknow)
-        {
-            _acquaFuoco.text = @"ACQUA";
+            _acquaFuoco.text = @"FUOCHERELLO";
         }
     }
 }
@@ -99,11 +99,11 @@ GiftView *gift;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)callGiftView:(id)sender {
+- (void)callGiftViewForBeacon:(NSNumber *)number {
     valido = [self checkBeacon];
     if(valido)
     {
-        [self setRegalo:1];
+        [self setRegalo:[number intValue]];
     }
     else
     {
@@ -112,8 +112,6 @@ GiftView *gift;
         gift.lblTrovato.text = @"Non hai trovato il regalo giusto!";
         gift.lblPunti.text = @"-5";
         [self.view addSubview:gift];
-
-        
     }
     
    
@@ -156,7 +154,7 @@ GiftView *gift;
 
 -(bool)checkBeacon
 {
-    if(false)
+    if(!false)
     {
         return true;
     }
