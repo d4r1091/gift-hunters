@@ -23,6 +23,8 @@
 		55C0B070185C7B3B006D3214 /* GiftHuntersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0B06F185C7B3B006D3214 /* GiftHuntersTests.m */; };
 		55C0B07A185C7BCE006D3214 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0B079185C7BCE006D3214 /* FacebookSDK.framework */; };
 		55C0B07C185C7BDC006D3214 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C0B07B185C7BDC006D3214 /* libEstimoteSDK.a */; };
+		55C0B07F185C859C006D3214 /* GiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C0B07E185C859C006D3214 /* GiftView.m */; };
+		55C0B081185C85AC006D3214 /* GiftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C0B080185C85AC006D3214 /* GiftView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		55C0B06F185C7B3B006D3214 /* GiftHuntersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftHuntersTests.m; sourceTree = "<group>"; };
 		55C0B079185C7BCE006D3214 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		55C0B07B185C7BDC006D3214 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEstimoteSDK.a; path = EstimoteSDK/libEstimoteSDK.a; sourceTree = "<group>"; };
+		55C0B07D185C859C006D3214 /* GiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftView.h; sourceTree = "<group>"; };
+		55C0B07E185C859C006D3214 /* GiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftView.m; sourceTree = "<group>"; };
+		55C0B080185C85AC006D3214 /* GiftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,9 @@
 				55C0B053185C7B3A006D3214 /* AppDelegate.h */,
 				55C0B054185C7B3A006D3214 /* AppDelegate.m */,
 				55C0B056185C7B3A006D3214 /* Main.storyboard */,
+				55C0B07D185C859C006D3214 /* GiftView.h */,
+				55C0B07E185C859C006D3214 /* GiftView.m */,
+				55C0B080185C85AC006D3214 /* GiftView.xib */,
 				55C0B059185C7B3A006D3214 /* ViewController.h */,
 				55C0B05A185C7B3B006D3214 /* ViewController.m */,
 				55C0B05C185C7B3B006D3214 /* Images.xcassets */,
@@ -238,6 +246,7 @@
 			files = (
 				55C0B05D185C7B3B006D3214 /* Images.xcassets in Resources */,
 				55C0B04F185C7B3A006D3214 /* InfoPlist.strings in Resources */,
+				55C0B081185C85AC006D3214 /* GiftView.xib in Resources */,
 				55C0B058185C7B3A006D3214 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +268,7 @@
 			files = (
 				55C0B05B185C7B3B006D3214 /* ViewController.m in Sources */,
 				55C0B055185C7B3A006D3214 /* AppDelegate.m in Sources */,
+				55C0B07F185C859C006D3214 /* GiftView.m in Sources */,
 				55C0B051185C7B3A006D3214 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +504,7 @@
 				55C0B075185C7B3B006D3214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55C0B076185C7B3B006D3214 /* Build configuration list for PBXNativeTarget "GiftHuntersTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +513,7 @@
 				55C0B078185C7B3B006D3214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

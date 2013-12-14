@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "GiftView.h"
 
 @interface ViewController ()
 
@@ -26,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)callGiftView:(id)sender {
+    GiftView *gift = [[GiftView alloc] init];
+    [self.view addSubview:gift];
+}
 @end
