@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *nRegaliTrovati;
 @property (weak, nonatomic) IBOutlet UILabel *titoloRegalo;
 @property (weak, nonatomic) IBOutlet UIImageView *imgRegalo;
+@property (nonatomic) BOOL fuoco;
+@property (weak, nonatomic) IBOutlet UILabel *acquaFuoco;
 - (IBAction)callGiftView:(id)sender;
 
 @end
