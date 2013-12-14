@@ -478,6 +478,7 @@
 				INFOPLIST_FILE = "GiftHunters/GiftHunters-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/peppeuz/Documents/workspace/gift-hunters/EstimoteSDK",
 					/Users/lavoro/Documents/workspace/GiftHunters/EstimoteSDK,
 					"/Users/antonio/Documents/workspace/gift-hunters/EstimoteSDK",
 				);
@@ -507,6 +508,7 @@
 				INFOPLIST_FILE = "GiftHunters/GiftHunters-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/peppeuz/Documents/workspace/gift-hunters/EstimoteSDK",
 					/Users/lavoro/Documents/workspace/GiftHunters/EstimoteSDK,
 					"/Users/antonio/Documents/workspace/gift-hunters/EstimoteSDK",
 				);
