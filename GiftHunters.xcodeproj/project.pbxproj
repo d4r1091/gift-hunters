@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A20CE20185CC88F00EE1321 /* haivinto.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A20CE1D185CC88F00EE1321 /* haivinto.png */; };
+		1A20CE21185CC88F00EE1321 /* Sfondo app GiftHunters.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A20CE1E185CC88F00EE1321 /* Sfondo app GiftHunters.png */; };
+		1A20CE22185CC88F00EE1321 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A20CE1F185CC88F00EE1321 /* splash.png */; };
+		1A20CE25185CCEE600EE1321 /* GiocaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A20CE24185CCEE600EE1321 /* GiocaViewController.m */; };
 		1A809D54185C9D8B009814E3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A809D53185C9D8B009814E3 /* Parse.framework */; };
 		1A809D56185C9DA4009814E3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A809D55185C9DA4009814E3 /* AudioToolbox.framework */; };
 		1A809D58185C9DA9009814E3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A809D57185C9DA9009814E3 /* CFNetwork.framework */; };
@@ -48,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A20CE1D185CC88F00EE1321 /* haivinto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haivinto.png; sourceTree = "<group>"; };
+		1A20CE1E185CC88F00EE1321 /* Sfondo app GiftHunters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sfondo app GiftHunters.png"; sourceTree = "<group>"; };
+		1A20CE1F185CC88F00EE1321 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		1A20CE23185CCEE600EE1321 /* GiocaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiocaViewController.h; sourceTree = "<group>"; };
+		1A20CE24185CCEE600EE1321 /* GiocaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiocaViewController.m; sourceTree = "<group>"; };
 		1A809D53185C9D8B009814E3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		1A809D55185C9DA4009814E3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1A809D57185C9DA9009814E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -129,6 +138,9 @@
 		55C0B038185C7B3A006D3214 = {
 			isa = PBXGroup;
 			children = (
+				1A20CE1D185CC88F00EE1321 /* haivinto.png */,
+				1A20CE1E185CC88F00EE1321 /* Sfondo app GiftHunters.png */,
+				1A20CE1F185CC88F00EE1321 /* splash.png */,
 				55C0B04A185C7B3A006D3214 /* GiftHunters */,
 				55C0B069185C7B3B006D3214 /* GiftHuntersTests */,
 				55C0B043185C7B3A006D3214 /* Frameworks */,
@@ -174,6 +186,8 @@
 			children = (
 				55C0B053185C7B3A006D3214 /* AppDelegate.h */,
 				55C0B054185C7B3A006D3214 /* AppDelegate.m */,
+				1A20CE23185CCEE600EE1321 /* GiocaViewController.h */,
+				1A20CE24185CCEE600EE1321 /* GiocaViewController.m */,
 				55C0B056185C7B3A006D3214 /* Main.storyboard */,
 				55C0B07D185C859C006D3214 /* GiftView.h */,
 				55C0B07E185C859C006D3214 /* GiftView.m */,
@@ -305,6 +319,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A20CE21185CC88F00EE1321 /* Sfondo app GiftHunters.png in Resources */,
+				1A20CE22185CC88F00EE1321 /* splash.png in Resources */,
+				1A20CE20185CC88F00EE1321 /* haivinto.png in Resources */,
 				55C0B05D185C7B3B006D3214 /* Images.xcassets in Resources */,
 				55C0B04F185C7B3A006D3214 /* InfoPlist.strings in Resources */,
 				55C0B081185C85AC006D3214 /* GiftView.xib in Resources */,
@@ -331,6 +348,7 @@
 				55C0B055185C7B3A006D3214 /* AppDelegate.m in Sources */,
 				55C0B07F185C859C006D3214 /* GiftView.m in Sources */,
 				55C0B051185C7B3A006D3214 /* main.m in Sources */,
+				1A20CE25185CCEE600EE1321 /* GiocaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

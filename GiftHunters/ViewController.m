@@ -22,11 +22,26 @@
 GiftView *gift;
 
 
+
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+ 
+                       
 	// Do any additional setup after loading the view, typically from a nib.
     [self initBeaconManager];
+}
+
+
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
+                            user:(id<FBGraphUser>)user
+{
+    
+    NSString *nome = user.first_name;
+    NSLog(@"%@", nome);
+    
+    
 }
 
 - (void)initBeaconManager

@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblGiftFrom;
 @property NSString *urlImg;
 @property bool beaconValido;
+- (IBAction)FbShare:(id)sender;
 
 
 @end

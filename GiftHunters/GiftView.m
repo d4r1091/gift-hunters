@@ -7,6 +7,7 @@
 //
 
 #import "GiftView.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation GiftView
 
@@ -20,6 +21,8 @@
     
     return self;
 }
+
+
 
 - (GiftView *)loadInstanceFromNib
 {
@@ -64,7 +67,75 @@
 }
 
 
+- (NSDictionary*)parseURLParams:(NSString *)query
+{
+    NSArray *pairs = [query componentsSeparatedByString:@"&"];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    for (NSString *pair in pairs) {
+        NSArray *kv = [pair componentsSeparatedByString:@"="];
+        NSString *val =
+        [kv[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        params[kv[0]] = val;
+    }
+    return params;
+}
+
+
+- (IBAction)fbShare:(id)sender
+{
+    // Put together the dialog parameters
+    NSMutableDictionary *params =
+    [NSMutableDictionary dictionaryWithObjectsAndKeys:
+     @"Ho trovato l'albero di natale!", @"name",
+     @"Merry XMas!", @"caption",
+     @"Auguri", @"description",
+     @"http://www.wearemonk.com/", @"link",
+     @"http://i.imgur.com/aEVRHIh.png", @"picture",
+     nil];
+    
+    // Invoke the dialog
+    [FBWebDialogs presentFeedDialogModallyWithSession:nil
+                                           parameters:params
+                                              handler:
+     ^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
+         if (error) {
+             // Error launching the dialog or publishing a story.
+             NSLog(@"Error publishing story.");
+         } else {
+             if (result == FBWebDialogResultDialogNotCompleted) {
+                 // User clicked the "x" icon
+                 NSLog(@"User canceled story publishing.");
+             } else {
+                 // Handle the publish feed callback
+                 NSDictionary *urlParams = [self parseURLParams:[resultURL query]];
+                 if (![urlParams valueForKey:@"post_id"]) {
+                     // User clicked the Cancel button
+                     NSLog(@"User canceled story publishing.");
+                 } else {
+                     // User clicked the Share button
+                     NSString *msg = [NSString stringWithFormat:
+                                      @"Posted story, id: %@",
+                                      [urlParams valueForKey:@"post_id"]];
+                     NSLog(@"%@", msg);
+                     // Show the result in an alert
+                     [[[UIAlertView alloc] initWithTitle:@"Result"
+                                                 message:msg
+                                                delegate:nil
+                                       cancelButtonTitle:@"OK!"
+                                       otherButtonTitles:nil]
+                      show];
+                 }
+             }
+         }
+     }];
+}
+
+
 - (IBAction)removeViewAction:(id)sender {
     [self removeFromSuperview];
+}
+- (IBAction)share {
+}
+- (IBAction)FbShare:(id)sender {
 }
 @end
